@@ -1,6 +1,26 @@
 /* HTML document is loaded. DOM is ready.
 -------------------------------------------*/
-$(function(){
+ var compilePage =  function(langId){
+        //console.log("langId:"+langId);
+        var langs=[en_us,zh_cn];
+        var lang=langs[langId];
+        var source=$('#index_template').html();
+        //console.log($('#index_template').html());
+        var template=Handlebars.compile(source);
+        var html=template(lang);
+        $('#mainContent').empty().append(html);
+
+
+        $('#langToggle').click(function(){
+                if (langId==0){
+                    langId=1;
+                }else{
+                    langId=0;
+                }
+                compilePage(langId);
+            })  
+        $('.preloader').fadeOut(1000); // set duration in brackets  
+
 
     /* start typed element */
     //http://stackoverflow.com/questions/24874797/select-div-title-text-and-make-array-with-jquery
@@ -45,10 +65,12 @@ $(function(){
     /* wow
     -----------------*/
     new WOW().init();
-});
+}
 
 /* start preloader */
 $(window).load(function(){
-	$('.preloader').fadeOut(1000); // set duration in brackets    
+       var langId=0;
+       compilePage(langId);
+	  
 });
 /* end preloader */
