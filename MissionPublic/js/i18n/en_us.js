@@ -1,4 +1,4 @@
-var en_us = {
+﻿var en_us = {
 	langToggle : '中文',
 	home: 'HOME',
 	about: 'ABOUT',
@@ -31,9 +31,9 @@ var en_us = {
 	teamName3: 'Jannet Zhou',
 	teamTitle3: 'CTO',
 	teamIntro3: 'Responsible for technology and development. Experienced software architect and technologist. 16 years research & development experience in major silicon valley companies, including eBay, iMany, Blueroad, RentAComupter, and Thoughtworks. US Patent inventor. MS in Computer Science from Ohio University.',
-	teamName4: 'Sunny Chen',
-	teamTitle4: 'CFO',
-	teamIntro4: 'Serial investor and entrepreneur. Responsible for finance, human resource, and legal. Co-founded Anshan Antai Technology Ltd and once served as general manager. Master degree from China Social Science Acedemy and bechelor degree in accouting from Dongbei University of Finance and Economics.',
+	teamName4: 'Xiaoping Shan',
+	teamTitle4: 'VP of Sales',
+	teamIntro4: 'Responsible for business development in Southern China. She was once the EMBA program director for Tsinghua University, Zhuhai campus. Committee member of Zhongshan Entrepreneurs association. She holds a master degree in mass communications.',
 
 	serviceTitle: 'INNOVATION AS A <span>SERVICE</span>',
 	serviceLn1: 'TECHNOLOGY PARTNERSHIP',
